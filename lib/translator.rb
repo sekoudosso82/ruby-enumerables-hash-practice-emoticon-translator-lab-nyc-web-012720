@@ -32,3 +32,16 @@ def get_japanese_emoticon(file_path, emoticon)
   
   return result            
 end
+
+
+def get_english_meaning(file_path, emoticon)
+  sheet = load_library(file_path)
+  result = sheet[:get_meaning][emoticon]
+  
+  if result == nil 
+    return "Sorry, that emoticon was not found"
+  end 
+  
+  return result
+
+end
