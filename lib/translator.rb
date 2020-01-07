@@ -1,4 +1,3 @@
-# require modules here
 require "yaml"
 require "pry"
 def load_library(file_path)
@@ -19,8 +18,7 @@ def load_library(file_path)
                 end 
   end 
   final_hash
-end
-
+end  
 
 def get_japanese_emoticon(file_path, emoticon)
   # binding.pry
@@ -47,7 +45,3 @@ def get_english_meaning(file_path, emoticon)
   return result
 
 end
-
-
-
-
